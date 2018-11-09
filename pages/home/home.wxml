@@ -1,0 +1,8 @@
+<!--pages/home/index.js.wxml-->
+<view class="container">
+    <image src='{{homeImgUrl}}' mode='aspectFit' ></image>
+    <view class="w100 fixed-bottom">
+        <button type='primary' bindtap='bindViewTap'> 请 客 </button>
+    </view>
+</view>
+

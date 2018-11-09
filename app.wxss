@@ -1,0 +1,56 @@
+/**app.wxss**/
+.container {
+  height: 1000rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+/**
+绝对定位按钮于底端
+*/
+.fixed-bottom {
+  position: fixed;
+  bottom: 1rpx;
+}
+.w100 {
+  width: 100%;
+}
+
+.bc_gray {
+  background-color: rgba(228, 222, 222, 0.589)
+}
+.f16 {
+  font-size: 16px
+}
+.mp10 {
+  margin-top: 10px
+}
+.center {
+  text-align: center
+}
+
+.content-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+  margin-bottom: 70rpx;
+}
+.content-block-item {
+  height: 290rpx;
+  width: 98%;
+  padding: 10rpx 10rpx;
+  margin-bottom: 30rpx;
+  background-color: rgba(228, 222, 222, 0.589)
+}
+
+.blue {
+  color: rgb(41, 140, 206);
+}
+

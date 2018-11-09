@@ -1,0 +1,21 @@
+<!--pages/auth/auth.wxml-->
+<view class="container">
+  <view class="center">
+    <image src='{{ authImgUrl }}' mode='aspectFit'></image>
+  </view>
+  <view class='section mp10'>
+    <view class='section__title center'>
+      <icon type='warn' size='15'></icon><text>请客之前需要确认以下事项：</text>
+    </view>
+    <view class='flex-wrp bc_gray'>
+      <view wx:for="{{notice}}" class='flex-item f16 mp10' style='padding:4px'>
+          {{item.message}}
+        </view>
+    </view>
+  </view>
+</view>
+<view class='w100 fixed-bottom'>
+  <button class='mp10' type='primary' bindtap='searching' loading='{{loading}}' disabled='{{disabled}}'> 搜 索 美 食 </button>
+</view>
+
+

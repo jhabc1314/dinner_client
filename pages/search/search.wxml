@@ -1,0 +1,19 @@
+<!--pages/search/search.wxml-->
+<form bindsubmit="formSubmit" >
+  <view class="section search">
+    <input name="keyword" class="search-input"  placeholder=' 搜 索 食 物' confirm-type='search'></input>
+  </view>
+  <!-- 显示搜索结果 -->
+  <scroll-view  scroll-y="true" enable-back-to-top="true" class="content-block">
+    <view class="content-block-item section" bindtap="restaurant" data-id="{{item.id}}"  wx:for="{{searchResult}}" wx:key="{{id}}">
+      <view class="section_title">店名:<text class="blue">{{item.name}}</text></view>
+      <view>评分:<text style="color:#E99">{{item.rating}}</text></view>
+      <view>成交单数:<text style="color:#EBB">{{item.recent_order_num}}</text></view>
+      <view>地址:{{item.address}}</view>
+      
+    </view>
+  </scroll-view>
+  <view class="btn-area w100 fixed-bottom">
+    <button type='primary' formType="submit"> 搜 索 </button>
+  </view>
+</form>
